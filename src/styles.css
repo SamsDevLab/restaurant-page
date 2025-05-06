@@ -1,3 +1,200 @@
+/* Kevin Powell Reset */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+html {
+  color-scheme: dark light;
+}
+
 body {
-  background-color: firebrick;
+  min-height: 100vh;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+}
+
+p,
+li,
+figcaption {
+  text-wrap: pretty;
+  max-width: 65ch;
+}
+
+img,
+picture,
+svg,
+video {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+textarea,
+button,
+select {
+  font: inherit;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+html {
+  color-scheme: dark light;
+}
+
+body {
+  min-height: 100vh;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+}
+
+p,
+li,
+figcaption {
+  text-wrap: pretty;
+  max-width: 65ch;
+}
+
+img,
+picture,
+svg,
+video {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+textarea,
+button,
+select {
+  font: inherit;
+}
+
+/* 
+Navbar/Menu: Solid dark brown (#4B2E24) or semi-transparent dark overlay (like rgba(43,43,43,0.8)) to help it pop.
+
+Headings: Rust orange (#C2643B) or pale yellow (#F0C878) if you want a "sun-bleached" feel.
+
+Body Text: Near-black gray (#2B2B2B) for easy reading.
+
+Buttons: Rust orange with pale yellow text or vice versa.
+*/
+
+/* Fonts */
+@font-face {
+  font-family: "RoadRage";
+  src: url("./fonts/RoadRage.woff") format("woff"),
+    url("./fonts/RoadRage.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "RobotoSlabReg";
+  src: url("./fonts/RobotoSlab-Regular.woff") format("woff"),
+    url("./fonts/RobotoSlab-Regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "RobotoSlabSemiBold";
+  src: url("./fonts/RobotoSlab-SemiBold.woff") format("woff"),
+    url("./fonts/RobotoSlab-SemiBold.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "RobotoSlabBold";
+  src: url("./fonts/RobotoSlab-Bold.woff") format("woff"),
+    url("./fonts/RobotoSlab-Bold.woff2") format("woff2");
+}
+
+body {
+  background-image: url("./images/roadkill-cafe.png");
+  background-size: 100vw 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  justify-content: space-between;
+  padding: 2rem 0 2rem 0;
+  /* align-items: center; */
+}
+
+/* Nav Bar */
+#nav-bar {
+  background-color: #4b2e24;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 1rem 0 1rem 0;
+}
+
+#nav-bar h1 {
+  font-family: "RoadRage";
+  font-size: 2rem;
+  color: #f0c878;
+}
+
+.button-container {
+  display: flex;
+  gap: 1rem;
+}
+
+.button-container > .button {
+  font-family: "RobotoSlabBold";
+  background-color: #f0c878;
+  letter-spacing: 1px;
+  color: #4b2e24;
+  height: 2rem;
+  width: 4rem;
+  border-radius: 0.75rem;
+  border: none;
+}
+
+.button-container > .button:hover {
+  background-color: #e0b86a;
+}
+
+#nav-bar,
+#content {
+  opacity: 0.9;
+}
+
+/* Body */
+#content {
+  background-color: #4b2e24;
+  height: 30rem;
+  width: 30rem;
+  align-self: center;
+  border-radius: 1rem;
+  padding: 1rem;
+  font-family: "RobotoSlabSemiBold";
+  color: #f0c878;
 }

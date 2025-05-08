@@ -1,17 +1,19 @@
 export const home = function () {
-  // Grab Content Div
   const contentDiv = document.querySelector("#content");
 
-  // Text
+  const homeDiv = document.createElement("div");
+  homeDiv.classList.add("home-container");
+
   const slogan = document.createElement("h2");
   slogan.innerText = "Rust, Dust and Roadkill! Come visit Mudgut's Cafe";
 
-  // Image
   const sideImg = document.createElement("img");
   sideImg.alt = "Post-apocalyptic diner";
   sideImg.src = require("./images/roadkill-cafe.png");
 
-  // Append Elements
-  contentDiv.appendChild(slogan);
-  contentDiv.appendChild(sideImg);
+  homeDiv.appendChild(slogan);
+  homeDiv.appendChild(sideImg);
+  contentDiv.appendChild(homeDiv);
 };
+
+// For Commit Purposes: Last thing I did was remove comments

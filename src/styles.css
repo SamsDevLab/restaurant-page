@@ -136,11 +136,6 @@ Main Text (very dark gray)	#2B2B2B	Soft black for easy reading without harshness
 
 body {
   background-color: #f5e0c3;
-  display: flex;
-  flex-direction: column;
-  align-content: center;
-  gap: 10rem;
-  padding: 2rem 0 2rem 0;
 }
 
 /* Nav Bar */
@@ -149,6 +144,7 @@ body {
   justify-content: space-evenly;
   align-items: center;
   padding: 1rem 0 1rem 0;
+  margin: 2rem 0 5rem 0;
   background-color: #c2643b;
 }
 
@@ -181,5 +177,39 @@ body {
 
 /* Body */
 #content {
-  align-self: center;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+/* Home Page */
+.home-div {
+  display: flex;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.home-div .text-div {
+  width: 27rem;
+}
+
+.home-div h2 {
+  font-family: "RoadRage";
+  font-size: 2rem;
+}
+
+.home-div h2,
+.home-div h3 {
+  color: #c2643b;
+}
+
+.home-div h3 {
+  font-family: "RobotoSlabSemiBold";
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+}
+
+.home-div img {
+  height: 22rem;
+  border-radius: 1rem;
 }

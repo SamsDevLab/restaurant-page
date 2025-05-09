@@ -182,7 +182,7 @@ body {
   justify-content: center;
 }
 
-/* Home Page */
+/* Home Module */
 .home-div {
   display: flex;
   align-items: center;
@@ -212,4 +212,27 @@ body {
 .home-div img {
   height: 22rem;
   border-radius: 1rem;
+}
+
+/* Menu Module */
+.menu-div {
+  background-color: #c2643b;
+  color: #f5e0c3;
+  width: 50%;
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 0 1rem 0;
+}
+
+.menu-div h2 {
+  font-family: "RobotoSlabBold";
+  font-size: 2.5rem;
+}
+
+.menu-div h3 {
+  font-family: "RobotoSlabSemiBold";
+  font-size: 1.25rem;
 }

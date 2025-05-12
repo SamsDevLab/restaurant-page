@@ -1,4 +1,6 @@
 import "./styles.css";
 
 import { home } from "./home";
-home();
+import { menu } from "./menu";
+// home();
+menu();

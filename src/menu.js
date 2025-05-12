@@ -91,45 +91,53 @@ export const menu = function () {
   const drinks = [
     createMenuItem(
       "Beer",
-      "$5",
-      "Got desert mouth from travelin' across the wasteland? Wash it all away with one (or five) of our sudsy beers!"
+      "$5.00",
+      "Got desert mouth from travelin' across The Wasteland? Wash it all away with one (or five) of our sudsy beers!"
     ),
 
     createMenuItem(
       "Coffee",
-      "$2",
-      "Smackin' yourself in the face just to stay awake?! Time for a cup of joe!"
+      "$2.00",
+      "Smackin' yourself in the face just to stay awake?! You may be overdue for a cup of joe!"
     ),
 
     createMenuItem(
       "Soda",
-      "$3.00 with Free Refills",
-      "It may be poison, but at least it tastes good!"
+      "$3.00 ",
+      "Fuel yourself with some Aqua Cola! All major brands available."
     ),
   ];
 
   const starters = [
-    createMenuItem("Waffle Fries", "$4.50", "Dank Fries, Bruh"),
-    createMenuItem("Sliders", "$6.00", "These slidies are BTD Big Time Dank"),
+    createMenuItem(
+      "Wasteland Waffle Fries",
+      "$3.50",
+      "Trademark snack of The Wasteland! Fried to golden perfection in 100% beef tallow."
+    ),
+    createMenuItem(
+      "Thunderdome Sliders",
+      "$6.00",
+      "Enter the Thunderdome! ...Sliders, that is. 100% Angus beef sliders come on a Hawaiian sweet roll, with Worcestershire sauce and your choice of cheese."
+    ),
   ];
 
   const meals = [
     createMenuItem(
-      "Burger with Wasteland Waffle Fries",
+      "Bullet Farm Burger",
       "$8.00",
-      "Feast on a dank burger"
+      "This 100% Angus beef patty comes armed and dangerous. Complete with bacon, caramelized onions, and your choice of cheese."
     ),
 
     createMenuItem(
       "Dink-Di Meat and Three",
-      "$9.00",
-      "This ain't no dog food!"
+      "$12.00",
+      "We can't legally serve you actual Dinki-Di dog food. So, take our meat and three option instead! Your choice of chicken-fried steak, meatloaf, or porkchop."
     ),
 
     createMenuItem(
       "The Green Place Veggie Plate",
       "$6.50",
-      "Dank veggies, dawg"
+      "Veggie plate from far away in The Green Place, where the rivers flow and the foilage grows."
     ),
   ];
 
@@ -137,19 +145,3 @@ export const menu = function () {
   addItemsToMenu("starters", starters);
   addItemsToMenu("meals", meals);
 };
-
-/* 
-Drinks
-- Beer
-- Coffee
-- Tea
-
-Appetizers
-- Sliders
-- Fries
-
-Meals
-- Burger w/ Fries
-- Dinki-Di Meat and Three
-- Vegetable Plate
-*/

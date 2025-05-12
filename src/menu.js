@@ -28,12 +28,16 @@ export const menu = function () {
         const itemDescription = document.createElement("p");
         itemDescription.classList.add("item-description");
 
+        const itemHeaderDiv = document.createElement("div");
+        itemHeaderDiv.classList.add("item-header-div");
+
         const itemPrice = document.createElement("p");
         itemPrice.classList.add("item-price");
 
-        itemDiv.appendChild(itemHeader);
+        itemHeaderDiv.appendChild(itemHeader);
+        itemHeaderDiv.appendChild(itemPrice);
+        itemDiv.appendChild(itemHeaderDiv);
         itemDiv.appendChild(itemDescription);
-        itemDiv.appendChild(itemPrice);
         section.appendChild(itemDiv);
       }
     };

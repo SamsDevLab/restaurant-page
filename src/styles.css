@@ -165,14 +165,14 @@ body {
   background-color: #c2643b;
   letter-spacing: 1px;
   color: #f5e0c3;
-  height: 3rem;
-  width: 6rem;
   border-radius: 0.75rem;
-  border: none;
+  border: 2px solid #f5e0c3;
+  padding: 0.6rem;
 }
 
 .button-container > .button:hover {
   background-color: #a14e2f;
+  /* outline: 1px solid #a14e2f; */
 }
 
 /* Body */

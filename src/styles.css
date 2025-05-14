@@ -138,6 +138,10 @@ body {
   background-color: #f5e0c3;
 }
 
+body::-webkit-scrollbar {
+  display: none;
+}
+
 /* Nav Bar */
 #nav-bar {
   display: flex;

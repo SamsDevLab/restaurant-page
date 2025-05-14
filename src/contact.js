@@ -15,6 +15,8 @@ export const contact = function () {
       addressHeader: "Address:",
       addressLineOne: "555 Middle of Nowhere Dr.",
       addressLineTwo: "Somewhere USA 55555",
+      hoursHeader: "Hours:",
+      hours: "24/7/365",
       phoneHeader: "Phone:",
       phoneNumber: "555-555-5555",
       emailHeader: "Email:",
@@ -25,9 +27,10 @@ export const contact = function () {
   function createContactElements(sections) {
     const contactSections = sections;
 
-    contactSections.forEach((element) => {
+    contactSections.forEach((element, index) => {
       const innerDiv = document.createElement("div");
       innerDiv.classList.add("inner-div");
+      innerDiv.classList.add(`div${index + 1}`);
 
       for (let [key, value] of Object.entries(element)) {
         if (key === "header") {
@@ -41,6 +44,7 @@ export const contact = function () {
           innerDiv.appendChild(paragraph);
         } else if (
           key === "addressHeader" ||
+          key === "hoursHeader" ||
           key === "phoneHeader" ||
           key === "emailHeader"
         ) {
@@ -58,6 +62,8 @@ export const contact = function () {
     });
 
     const image = document.createElement("img");
+    image.src = require("./images/inside-mudguts-lightened.png");
+    image.setAttribute("id", "inside-mudguts");
     contactDiv.appendChild(image);
   }
 

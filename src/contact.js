@@ -8,7 +8,7 @@ export const contact = function () {
     {
       header: "About",
       description:
-        "Established in 1987, Mudgut's Cafe is a desert diner inspired by the Mad Max franchise. Named after Mudguts, a member of Toecutter's gang of heathens, this desert oasis will leave you refreshed for your drive to the next town.",
+        "Established in 1987, Mudgut's Cafe is a desert diner inspired by the Mad Max franchise. Named after Mudguts, a lawless member of Toecutter's gang of heathens, this desert oasis will leave you refreshed for your drive to the next town.",
     },
     {
       header: "Contact",

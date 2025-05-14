@@ -25,8 +25,7 @@ export const home = function () {
   function createSideImg() {
     const sideImg = document.createElement("img");
     sideImg.alt = "Post-apocalyptic diner";
-    sideImg.src = require("./images/mudguts-cafe.png");
-    // sideImg.src = require("./images/roadkill-cafe.png");
+    sideImg.src = require("./images/mudguts-cafe-lightened.png");
     homeDiv.appendChild(sideImg);
   }
 

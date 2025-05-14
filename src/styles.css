@@ -220,11 +220,11 @@ body {
   background-color: #c2643b;
   color: #f5e0c3;
   width: 50%;
-  border-radius: 0.5rem;
+  border-radius: 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 3rem 2rem 3rem 2rem;
+  padding: 2.5rem 2rem 2.5rem 2rem;
   margin-bottom: 2rem;
 }
 
@@ -232,7 +232,6 @@ body {
   font-family: "RobotoSlabBold", "Georgia", serif;
   font-weight: bold;
   font-size: 2.5rem;
-  align-self: center;
 }
 
 /* Sections */
@@ -241,26 +240,31 @@ body {
   flex-direction: column;
   gap: 0.5rem;
   width: 100%;
-  padding: 2rem;
+  padding: 1.5rem;
   line-height: 1.5rem;
-  letter-spacing: 0.05rem;
+  letter-spacing: 1px;
 }
 
 .section .section-header {
   font-family: "RobotoSlabSemiBold", "Georgia", serif;
   font-weight: 600;
-  font-size: 1.5rem;
+  font-size: 1.75rem;
+  margin-bottom: 0.5rem;
 }
 
 .section .item-div {
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
+  margin-bottom: 1rem;
 }
 
 .section .item-header-div {
   display: flex;
   justify-content: space-between;
+}
+
+.item-header {
+  margin-bottom: 0.25rem;
 }
 
 .item-div .item-header,
@@ -272,7 +276,6 @@ body {
 
 .item-div .item-description {
   font-family: "RobotoSlabReg", "Georgia", serif;
-  font-weight: 600;
   font-size: 1rem;
 }
 
@@ -294,7 +297,6 @@ body {
 
 .inner-div {
   color: #c2643b;
-  line-height: 1.5rem;
 }
 
 .inner-div h2 {
@@ -314,15 +316,15 @@ body {
 
 .inner-div p {
   font-family: "RobotoSlabReg", "Georgia", serif;
-  font-size: 0.9rem;
+  font-size: 1rem;
   letter-spacing: 1px;
+  line-height: 1.5rem;
 }
 
 .div1 {
   grid-column: 1/2;
   grid-row: 1/2;
   align-self: self-start;
-  line-height: 1.75rem;
 }
 
 .div2 {
